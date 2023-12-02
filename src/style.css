@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    background-color: #bad2ff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #1B8AF0;
+}
+
+.nav-logo {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.nav-list {
+    float: right;
+    list-style: none;
+}
+
+.nav-list-item {
+    padding: 24px 20px;
+    float: right;
+}
+
+.nav-list-item a{
+    text-decoration: none;
+    padding: 14px;
+    color: white;
+    border-radius: 5px;
+    transition: ease .3s;
+}
+
+.nav-list-item a:hover{
+    background-color: white;
+    color: #1B8AF0;
+}
+
+.nav-list-item a:active{
+    background-color: #1B8AF0;
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.main-top-bar{
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    background-color: #1B8AF0;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#todo-header {
+    display: inline-block;
+    padding: 8px;
+}
+
+.btn-menu{
+    float: left;
+    font-size: 22px;
+    appearance: none;
+    border: none;
+    color: white;
+    background-color: #1B8AF0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px;
+    transition: ease 0.3s;
+}
+
+.btn-menu:hover{
+    color: #1B8AF0;
+    background-color: white;
+}
+
+.btn-menu:active{
+    color: white;
+    background-color: #1B8AF0;
+}
+
+.btn-add{
+    float: right;
+    font-size: 22px;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: #1B8AF0;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    transition: ease 0.3s;
+}
+
+.btn-add:hover{
+    color: #1B8AF0;
+    background-color: white;
+}
+
+.btn-add:active{
+    color: white;
+    background-color: #1B8AF0;
+}
+
+.main-body{
+    display: inline-block;
+    background-color: white;
+    text-align: left;
+    width: 30%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-list-item{
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.checkbox{
+    width: 15px;
+    height: 15px;
+    margin-right: 25px;
+    transition: ease .3s;
+}
+
+.checkbox:hover{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.task-label:hover{
+    cursor: pointer;
+}
+
+.btn-delete {
+    float: right;
+    font-size: 18px;
+    padding-top: 5px;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
