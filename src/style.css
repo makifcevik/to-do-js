@@ -171,3 +171,9 @@ a{
     color: black;
     background-color: white;
 }
+
+.task-edit-entry {
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
