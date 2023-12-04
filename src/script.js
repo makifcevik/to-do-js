@@ -35,19 +35,23 @@ document.addEventListener("DOMContentLoaded", () =>
             newTask.replaceChild(editInput, taskName);
 
             // focus
-            // editInput.focus();
+            editInput.focus();
 
             // save changes
-            function saveTaskName()
-            {
-                taskName.textContent = editInput.value;
-                newTask.replaceChild(taskName, editInput);
-            }
+            function saveTaskName() {
+                // Check if editInput is still part of the DOM
+                if (editInput && editInput.parentElement) {
+                    taskName.textContent = editInput.value;
+            
+                    // Replace editInput with taskName
+                    editInput.parentElement.replaceChild(taskName, editInput);
+                }
+            }            
 
             // save on input = enter
-            editInput.addEventListener("keyup", (event) =>
+            editInput.addEventListener("keydown", (event) =>
             {
-                if (event.key === "Enter")
+                if (event.key === "Enter" && editInput)
                 {
                     saveTaskName();
                 }
@@ -61,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () =>
             // Click event handler
             function clickHandler(event) 
             {
-                if (!newTask.contains(event.target)) 
+                if (editInput && !editInput.contains(event.target)) 
                 {
                     saveTaskName();
                     document.removeEventListener("click", clickHandler);
